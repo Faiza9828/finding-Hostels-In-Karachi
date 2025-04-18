@@ -1,0 +1,445 @@
+body {
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+.page-1 h1 {
+   text-align: center;
+   font-size: 3.5rem;
+   font-weight: 900;
+   font-family: italiana;
+}
+.page-1 h1 span {
+    color: orange;
+    font-size: 5rem;
+}
+.page-1 h4 {
+    font-size: 2.5rem;
+   text-align: center;
+}
+.choice-1 img {
+    width: 15vw;
+    height: 30vh;
+}
+.choice {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+}
+.choice a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid orange;
+    padding: 15px 40px;
+    border-radius: 10px;
+    background-color: orange;
+    transition: scale 0.2 ease;
+}
+.user-btn a {
+    padding: 15px 80px;
+}
+
+.login h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: italiana;
+}
+.login h1 span {
+    color: orange;
+    font-size: 5rem;
+}
+.login-page {
+    width: 30vw;
+    height: 68vh;
+    border-radius: 3%;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 470px;
+    margin-top: -30px;
+    color: black;
+}
+.login-page i {
+    margin: 20px 170px;
+    padding: 10px;
+    font-size: 2rem;
+    border: 5px solid black;
+    border-radius: 50%;
+    justify-content: center;
+}
+.login-page h2 {
+    text-align: center;
+    margin-top: -20px;
+    font-size: 2rem;
+}
+
+  .login-form {
+    background: #fff;
+    padding: 20px 30px ;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 345px;
+    height: 250px;
+    margin-right: 50px;
+  }
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .login-form input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .login-form button {
+    width: 100%;
+    padding: 10px 165px;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .login-form button:hover {
+    background-color:rgb(224, 153, 19);
+  }
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+  
+  .dashboard-container {
+      display: flex;
+      height: 180vh;
+      margin-top: -10px;
+      margin-left: -10px;
+      margin-bottom: -10px;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background: #333;
+      color: white;
+      padding: 20px 40px;
+    }
+    .sidebar h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+    .sidebar h1 span {
+      color: orange;
+    }
+    
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .sidebar ul li {
+      margin: 10px 0;
+    }
+    
+    .sidebar ul li a, .sidebar ul li button {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      background: #444;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+     
+    }
+    
+    .sidebar ul li a:hover, .sidebar ul li button:hover {
+      background: #555;
+    }
+    
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+
+    .dashboard {
+      display: flex;
+      color: white;
+    }
+    .topbar {
+      display: flex;
+    }
+    .search {
+      display: flex;
+    }
+    .search input {
+      width: 20vw;
+      height: 5vh;
+      background-color: #444;
+    }
+    .search label i {
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 1.2rem;
+      margin-right: 500px;
+    }
+    .notify i {
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 1.2rem;
+    }
+
+    .overview h1 {
+      font-size: 3rem;
+      font-weight: 1200;
+      padding-top: 10px;
+    }
+    .overview p {
+      margin-top: -30px;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .property-overview {
+      width: 68vw;
+      height: 25vh;
+      background:#444;
+      color: white;
+      display: flex;
+      line-height: 3;
+      border-radius: 5%;
+    }
+    .property-icon i {
+      padding: 30px 50px;
+      font-size: 5rem;
+      color: white;
+    }
+
+    .skill-bar .bar span {
+      width: 40%;
+      height: 2%;
+      margin-left: 550px;
+      position: absolute;
+      left: 0;
+      background: white;
+      border-radius: 25px;
+      box-shadow: rgb(23, 23, 48);
+  }
+  .property-container h3 {
+    font-size: 1.3rem;
+  }
+  .total-property h1 {
+    padding-left: 300px;
+    margin: -10px;
+  }
+
+  .overview-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 1.5rem;
+  }
+  #box {
+    width: 15.5vw;
+    height: 20vh;
+    background: #444;
+    border-radius: 10%;
+    display: flex;
+  }
+  .loader-1 {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    border: 20px solid rgb(39, 37, 37);
+    border-top: 20px solid orange;
+    border-right: 20px solid orange;
+    border-bottom: 20px solid orange;
+    margin: 25px 10px;
+  }
+  .box-content {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+  .box-content p {
+    font-size: 1rem;
+  } 
+  .box-content h2 {
+    font-size: 2rem;
+    margin-top: -10px;
+  }
+  .loader-2 {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    border: 20px solid rgb(39, 37, 37);
+    border-top: 20px solid rgb(71, 71, 209);
+    margin: 25px 10px;
+  }
+  .loader-3 {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    border: 20px solid rgb(39, 37, 37);
+    border-right: 20px solid green;
+    border-bottom: 20px solid green;
+    margin: 25px 10px;
+  }
+  .loader-4 {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    border: 20px solid rgb(39, 37, 37);
+    border-right: 20px solid orangered;
+    margin: 25px 10px;
+  }
+
+  .content-2 {
+    width: 38vw;
+    height: 80vh;
+    padding: 20px;
+    padding-top: 0;
+    background-color: #333;
+    margin-right: 30px;
+    margin-top: 50px;
+    border-radius: 5%;
+  }
+  .content-2 h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  .analysis {
+    display: flex;
+  }
+  .left-box {
+    width: 25vw;
+    height: 83vh;
+    background-color: #333;
+    margin-top: 50px;
+    border-radius: 5%;
+  }
+  .left-box h2 {
+    padding-left: 20px;
+    
+  }
+
+  .left-box .flat-bar .bar {
+    width: 83%;
+    height: 15px;
+    font-size: 3rem;
+    background-color: rgb(44, 44, 63);
+    border-radius: 50px;
+    margin-top: -35px;
+    margin-left: 20px;
+    position: relative;
+}
+.flat-bar .bar span {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: orange;
+    border-radius: 25px;
+    box-shadow: rgb(23, 23, 48);
+}
+.flat-bar .bar .Flats {
+    width: 65%;
+}
+.flat-bar .bar .Hostels {
+    width: 35%;
+}
+.flat-bar .bar .Rent1 {
+  width: 85%;
+}
+.flat-bar .bar .Rent2 {
+  width: 80%;
+}
+.flat-bar .bar .Target {
+  width: 60%;
+}
+.flat-bar .bar .Listed {
+  width: 90%;
+}
+
+.flats-content {
+  display: flex;
+  padding: 20px;
+  padding-top: 50px;
+  gap: 10rem;
+}
+.flats-content p {
+  font-size: 1rem;
+}
+
+    
+    .add-property {
+      display: flex;
+    }
+    .add-property h1 {
+      font-size: 3rem;
+    }
+    .form-group {
+      margin-bottom: 15px;
+  }
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 5px;
+      background-color:  rgb(39, 38, 38);
+  }
+  .button {
+      padding: 8px 12px;
+      color: #fff;
+      background-color: orange;
+      border: none;
+      cursor: pointer;
+  }
+  #location {
+    color: white;
+  }
+
+  .manage-properties {
+    display: flex;
+    
+  }
+  .manage-content h1 {
+    font-size: 3rem;
+  }
+  table {
+    width: 150%;
+    height: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    
+}
+th {
+    background-color: #444;
+}
+
+.button.delete {
+    background-color: #dc3545;
+}

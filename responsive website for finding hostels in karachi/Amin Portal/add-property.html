@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!--dashboard-section-->
+  <section class="add-property" id="add-property">
+    <div class="dashboard-container">
+        <aside class="sidebar">
+          <h1><span>O</span>wnify</h1>
+          <ul>
+            <li><a href="dashboard.html">Overview</a></li>
+            <li><a href="add-property.html">Add Property</a></li>
+            <li><a href="manage.html">Manage Properties</a></li>
+            <li><a href="login-2.html">Logout</a></li>
+          </ul>
+        </aside>
+        <main class="content">
+          <!-- Main content (overview, quick actions, etc.) -->
+        </main>
+      </div>
+
+    <div class="property-content">
+        <h1>Add Property</h1>
+        <form id="addPropertyForm">
+            <input type="text" id="propertyName" placeholder="Property Name" required>
+            <select id="location" required>
+              <option value="">Select Location</option>
+              <option value="DHA">DHA</option>
+              <option value="Gulshan">Gulshan</option>
+              <option value="Clifton">Clifton</option>
+              <option value="North Karachi">North Karachi</option>
+            </select>
+            <div>
+              <label><input type="radio" name="type" value="Hostel" required> Hostel</label>
+              <label><input type="radio" name="type" value="Flat" required> Flat</label>
+            </div>
+            <input type="number" id="price" placeholder="Price" required>
+            <textarea id="description" placeholder="Property Description" required></textarea>
+            <input type="file" id="image" required>
+            <button type="submit" class="button">Submit</button>
+           
+          </form>
+            <p id="successMessage" style="color: green; display: none;">Property added successfully!</p>
+    </div>
+  </section>
+
+<script>
+    const addPropertyForm = document.getElementById('addPropertyForm');
+    const successMessage = document.getElementById('successMessage');
+
+    addPropertyForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        successMessage.style.display = 'block';
+        setTimeout(() => successMessage.style.display = 'none', 3000);
+        addPropertyForm.reset();
+    });
+</script>
+
+
+</body>
+</html>

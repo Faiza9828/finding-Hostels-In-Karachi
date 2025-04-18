@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage-Peoperty</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!--dashboard-section-->
+  <section class="manage-properties" id="manage-properties">
+    <div class="dashboard-container">
+        <aside class="sidebar">
+          <h1><span>O</span>wnify</h1>
+          <ul>
+            <li><a href="dashboard.html">Overview</a></li>
+            <li><a href="add-property.html">Add Property</a></li>
+            <li><a href="manage.html">Manage Properties</a></li>
+            <li><a href="login-2.html">Logout</a></li>
+          </ul>
+        </aside>
+        <main class="content">
+          <!-- Main content (overview, quick actions, etc.) -->
+        </main>
+    </div>
+
+    <div class="manage-content">
+        <h1>Manage Properties</h1>
+        <table id="propertiesTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+                <tbody>
+                <!-- Dynamic Rows will be added here -->
+                </tbody>
+        </table>
+    </div>
+  </section>
+  
+
+ 
+<script>
+    const propertiesTable = document.getElementById('propertiesTable').querySelector('tbody');
+
+    let properties = [
+        { name: 'Example Property', location: 'DHA', type: 'Residential', price: '5000000' },
+        { name: 'Luxury Apartment', location: 'Clifton', type: 'Residential', price: '7500000' },
+        { name: 'Office Space', location: 'Gulshan', type: 'Commercial', price: '3000000' },
+        { name: 'Villa', location: 'DHA', type: 'Residential', price: '15000000' },
+    ];
+
+    function displayProperties() {
+        propertiesTable.innerHTML = '';
+        properties.forEach((property, index) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${property.name}</td>
+                <td>${property.location}</td>
+                <td>${property.type}</td>
+                <td>${property.price}</td>
+                <td>
+                    <button class="button" onclick="editProperty(${index})">Edit</button>
+                    <button class="button delete" onclick="deleteProperty(${index})">Delete</button>
+                </td>
+            `;
+            propertiesTable.appendChild(row);
+        });
+    }
+
+    function editProperty(index) {
+        alert('Editing property: ' + properties[index].name);
+        window.location.href = "add-property.html"; // Simulated dashboard URL
+        // Logic to edit property
+    }
+
+    function deleteProperty(index) {
+        properties.splice(index, 1);
+        displayProperties();
+    }
+
+    displayProperties();
+</script>
+
+
+
+</body>
+</html>

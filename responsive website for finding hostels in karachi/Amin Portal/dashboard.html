@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <section class="dashboard" id="dashboard">
+     <!--dashboard-section-->
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h1><span>O</span>wnify</h1>
+      <ul>
+        <li><a href="dashboard.html">Overview</a></li>
+        <li><a href="add-property.html">Add Property</a></li>
+        <li><a href="manage.html">Manage Properties</a></li>
+        <li><a href="login-2.html">Logout</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      <!-- Main content (overview, quick actions, etc.) -->
+    </main>
+  </div>
+
+  <div class="overview">
+    <div class="topbar">
+      <div class="search">
+        <input type="text" id="search" placeholder="Search Here">
+        <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+      </div>
+      <div class="notify">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-message-minus"></i>
+      </div>
+    </div>
+  
+    <h1>Dashboard</h1>
+    <p>Welcome Back!</p>
+    <div class="property-overview">
+      <div class="property-icon">
+        <i class="fa-duotone fa-solid fa-house"></i>
+      </div>
+
+      <div class="property-container">
+        <h3>Total Properties</h3>
+        <div class="skill-bar">
+          <div class="bar">
+              <span class="property"></span>
+          </div>
+          <div class="info">
+            <p>431 more to break last month record</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="total-property">
+        <h1>4,562</h1>
+      </div>
+    </div>
+
+    <div class="overview-2">
+      <div class="box-1" id="box">
+        <div class="box-content">
+          <p>Properties for Sale</p>
+          <h2>684</h2>
+        </div>
+        <div class="loader-1"></div>
+      </div>
+      
+      <div class="box-2" id="box">
+        <div class="box-content">
+          <p>Properties for Rent</p>
+          <h2>546</h2>
+        </div>
+        <div class="loader-2"></div>
+      </div>
+
+      <div class="box-3" id="box">
+         <div class="box-content">
+          <p>Total Property Owners</p>
+          <h2>96</h2>
+        </div>
+        <div class="loader-3"></div>
+      </div>
+
+      <div class="box-4" id="box">
+         <div class="box-content">
+          <p>Total Locations</p>
+          <h2>75</h2>
+        </div>
+        <div class="loader-4"></div>
+      </div>
+    </div>
+
+    <div class="analysis" id="analysis">
+      <div class="content-2">
+        <h1>Property Analysis</h1>
+        <canvas id="propertyChart" width="250" height="200"></canvas> <!-- Chart Canvas -->
+      </div>
+
+      <div class="left-box"> 
+        <h2>Properties Overview</h2>
+        <div class="flat-bar">
+          <div class="flats-content">
+              <p>Total Flats</p>
+              <p>65%</p>
+          </div>
+          <div class="bar">
+              <span class="Flats"></span>
+          </div>
+      </div>
+
+      <div class="flat-bar">
+        <div class="flats-content">
+            <p>Total Hostels</p>
+            <p>35%</p>
+        </div>
+        <div class="bar">
+            <span class="Hostels"></span>
+        </div>
+    </div>
+
+    <div class="flat-bar">
+      <div class="flats-content">
+          <p>Flats In Rent</p>
+          <p>85%</p>
+      </div>
+      <div class="bar">
+          <span class="Rent1"></span>
+      </div>
+  </div>
+
+  <div class="flat-bar">
+    <div class="flats-content">
+        <p>Hostels In Rent</p>
+        <p>80%</p>
+    </div>
+    <div class="bar">
+        <span class="Rent2"></span>
+    </div>
+</div>
+
+<div class="flat-bar">
+  <div class="flats-content">
+      <p>Target Property</p>
+      <p>60%</p>
+  </div>
+  <div class="bar">
+      <span class="Target"></span>
+  </div>
+</div>
+
+<div class="flat-bar">
+  <div class="flats-content">
+      <p>Property Listed</p>
+      <p>90%</p>
+  </div>
+  <div class="bar">
+      <span class="Listed"></span>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+ 
+  <script src="script.js"></script>
+</body>
+</html>

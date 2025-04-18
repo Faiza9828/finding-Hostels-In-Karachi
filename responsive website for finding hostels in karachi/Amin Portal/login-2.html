@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <section class="login" id="login">
+        <h1><span>O</span>wnify</h1>
+        <div class="login-page">
+            <i class="fa-solid fa-user-plus"></i>
+            <h2>Login</h2>
+             <form class="login-form" id="loginForm">
+                <div class="error" id="errorMessage"></div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button type="button" id="loginButton">Login</button>
+              </form>
+        </div>
+    </section>
+    
+      <script>
+        document.getElementById("loginButton").addEventListener("click", function () {
+          const email = document.getElementById("email").value.trim();
+          const password = document.getElementById("password").value.trim();
+          const errorMessage = document.getElementById("errorMessage");
+    
+          errorMessage.textContent = ""; // Clear previous error message
+    
+          // Validate email format
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            errorMessage.textContent = "Please enter a valid email.";
+            return;
+          }
+    
+          // Check if password is not empty
+          if (password === "") {
+            errorMessage.textContent = "Password cannot be empty.";
+            return;
+          }
+    
+          // Redirect to dashboard (for now, just simulate this)
+          alert("Login successful! ...");
+          window.location.href = "dashboard.html"; // Simulated dashboard URL
+        });
+      </script>
+</body>
+</html>
